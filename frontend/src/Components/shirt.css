@@ -55,27 +55,11 @@
 }
 
 .navbar .nav1 a:hover::after {
-    background-color: #007bff;
+    background-color: #0b0b0b;
     transform: scaleX(1);
 }
 
-.menu {
-    text-align: center;
-    margin: 20px 0;
-}
-
-.menu a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    font-size: 16px;
-    transition: color 0.3s;
-}
-
-.menu a:hover {
-    color: #007bff;
-}
-
+/* Container layout improvements */
 .sh {
     display: flex;
     flex-wrap: wrap;
@@ -84,6 +68,7 @@
     margin: 20px;
 }
 
+/* Updated container styling */
 .cont-1, .cont-2, .cont-3, .cont-4, .cont-5, .cont-6, .cont-7, .cont-8, .cont-9, .cont-10, .cont-11, .cont-12, .cont-13, .cont-14, .cont-15, .cont-16, .cont-17, .cont-18, .cont-19, .cont-20, .cont-21, .cont-22 {
     width: 200px;
     text-align: center;
@@ -92,13 +77,14 @@
     padding: 10px;
     background-color: #f8f9fa;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s; /* Transition added here */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
     display: flex; 
     flex-direction: column; 
     justify-content: space-between; 
     height: 350px; 
 }
 
+/* Image adjustments */
 .cont-1 img, .cont-2 img, .cont-3 img, .cont-4 img, .cont-5 img, .cont-6 img, .cont-7 img, .cont-8 img, .cont-9 img, .cont-10 img, .cont-11 img, .cont-12 img, .cont-13 img, .cont-14 img, .cont-15 img, .cont-16 img, .cont-17 img, .cont-18 img, .cont-19 img, .cont-20 img, .cont-21 img, .cont-22 img {
     width: 100%; 
     height: 150px; 
@@ -106,6 +92,7 @@
     border-radius: 5px; 
 }
 
+/* Title hover */
 .tit {
     display: block;
     margin-top: 10px;
@@ -116,36 +103,66 @@
 }
 
 .tit:hover {
-    color: #007bff;
+    color: #090909;
 }
 
+/* Button styling and hover lift effect */
 .but {
-    background-color: #007bff;
+    background-color: black;
     color: #fff;
     border: none;
     border-radius: 4px;
     padding: 8px 16px;
     font-size: 14px;
     cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s; /* Transition added here */
-    margin-top: auto; 
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: auto; /* Ensures button stays at the bottom */
 }
 
 .but:hover {
-    background-color: #0056b3;
+    background-color:black;
     transform: translateY(-2px); /* Slight lift effect on hover */
 }
+
+/* Heading style for sections */
 .sst {
     font-size: 3em; /* Large text size */
-    font-family: 'Arial', sans-serif; /* Choose your preferred font */
-    color: #333; /* Dark gray color */
-    text-align: center; /* Center the text */
-    margin: 20px 0; /* Add space above and below */
-    text-transform: uppercase; /* Make text uppercase */
-    letter-spacing: 2px; /* Increase space between letters */
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    text-align: center;
+    margin: 20px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
     transition: color 0.3s ease; /* Smooth color transition */
 }
 
 .sst:hover {
-    color: #007BFF; /* Change color on hover */
+    color: #0b0b0b; /* Change color on hover */
+}
+
+/* Ads section */
+.ads {
+    background-color: black; /* Dark background */
+    text-align: center;
+    padding: -3px 0;
+    font-size: 1.2em;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.animate {
+    display: inline-block;
+    animation: moveText 20s linear infinite;
+    font-family: 'Arial', sans-serif;
+    color: #fcf6f6;
+    padding: 0px;
+}
+
+@keyframes moveText {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
 }

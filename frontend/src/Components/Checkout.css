@@ -1,8 +1,8 @@
 :root {
-    --primary-color: #007bff;
-    --hover-color: #0056b3;
-    --overlay-color-start: rgba(0, 123, 255, 0.7); /* Light blue */
-    --overlay-color-end: rgba(0, 86, 179, 0.7); /* Darker blue */
+    --primary-color: #0d0d0e;
+    --hover-color: #060606;
+    --overlay-color-start: rgb(4, 5, 5); /* Light blue */
+    --overlay-color-end: rgba(0, 0, 0, 0.7); /* Darker blue */
     --border-color: #ddd;
 }
 
@@ -25,7 +25,7 @@
 }
 
 .error-message {
-    color: red;
+    color: rgb(10, 10, 10);
     text-align: center;
     margin-bottom: 10px;
 }
@@ -80,7 +80,7 @@
 }
 
 .checkout-button:hover {
-    background: linear-gradient(135deg, var(--hover-color), #003d80); /* Darker gradient on hover */
+    background: linear-gradient(135deg, var(--hover-color), #050505); /* Darker gradient on hover */
     transform: scale(1.05); /* Slightly enlarge on hover */
 }
 
@@ -112,7 +112,6 @@
     width: 90%;
     max-width: 400px; /* Limit width */
     text-align: center; /* Center text inside popup */
-    margin: -80px 160px;
 }
 
 /* Animation for overlay */
@@ -160,7 +159,7 @@
 }
 
 .popup button:hover {
-    background: linear-gradient(135deg, var(--hover-color), #003d80); /* Darker gradient on hover */
+    background: linear-gradient(135deg, var(--hover-color), #050505); /* Darker gradient on hover */
     transform: scale(1.05); /* Slightly enlarge on hover */
 }
 
@@ -181,4 +180,14 @@
         font-size: 14px;
         padding: 10px;
     }
+}
+
+.notification {
+    background-color: #f8d7da; /* Light red background */
+    color: #721c24; /* Dark red text */
+    padding: 10px;
+    border: 1px solid #f5c6cb; /* Border color */
+    border-radius: 5px;
+    margin-bottom: 15px;
+    text-align: center; /* Center text */
 }

@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Login from './Components/Login';
 import Signup from './Components/Signup';
 import Home from './Components/home'; 
-import Tshirt from './Components/tshirt';
 import Shirt from './Components/shirt';
 import Custom from './Components/customizes';
 import About from './Components/about';
@@ -16,8 +15,9 @@ import Cdaddcart from './Components/cdaddcart';
 import Custshirt from './Components/custshirt';
 import Privacy from './Components/privacy';
 import Terms from './Components/terms';
-
-
+import Tshirt from './Components/tshirt';
+import ExplorePage from './ExplorePage'; 
+import AdminOrders from './Components/adminOrders';
 const App = () => {
   return (
     <Router>
@@ -27,7 +27,7 @@ const App = () => {
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/home" element={<Home />} />
-          <Route path='/tshirt' element={<Tshirt />} />
+          <Route path='/tshirt' element={<Tshirt/>} />
           <Route path='/shirt' element={<Shirt />} />
           <Route path='/customizes' element={<Custom />} />
           <Route path='/about' element={<About />} />
@@ -40,6 +40,9 @@ const App = () => {
           <Route path='/custshirt' element={<Custshirt />} />
           <Route path='/privacy' element={<Privacy />} />
           <Route path='/terms' element={<Terms />} />
+          <Route path="/explore" element={<ExplorePage />} />
+          <Route path='/adminOrders' element={<AdminOrders />} />
+
         </Routes>
       </div>
     </Router>

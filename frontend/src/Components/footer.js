@@ -19,7 +19,7 @@ function Footer() {
         <footer className="footer">
             <div className="footer-content">
                 <div className="footer-left">
-                    <p>&copy; {new Date().getFullYear()} STAR STYLE. All Rights Reserved.</p>
+                    <p>&copy; {new Date().getFullYear()} Frenzy Fashion. All Rights Reserved.</p>
                     <ul className="footer-links">
                         <li><a href="/privacy">Privacy Policy</a></li>
                         <li><a href="/terms">Terms of Service</a></li>
@@ -59,8 +59,8 @@ function Footer() {
                 <div className="footer-right">
                     <div className="contact-info">
                         <h4>Contact Us</h4>
-                        <p>Email: starstyle@store.com</p>
-                        <p>Phone: +91 8903003808</p>
+                        <p>Email:frenzyfashion@store.com</p>
+                        <p>Phone: +91 9843191670</p>
                     </div>
 
                     <div className="morals">

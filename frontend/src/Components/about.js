@@ -7,31 +7,29 @@ function about(){
         <div className='about'>
             <div className='navbar'>
                 <img className='logo' src='./logo3.png' alt="Logo" />
-                <div className='menu'> 
-                            <a className='custom' href='/customizes'>Customize Your products</a>
-                    </div>
-                    
+                <h1 className="about-title">About Frenzy Fashion</h1>
                 <Navbar>
                     <Nav className='nav1'> 
                         <a className="a1" href="/home">Home</a>
                         <a className="a2" href="/shirt">Shirt</a>
-                        <a className="a3" href="/tshirt">T-shirt</a>
+                        <a className="a3" href="/tshirt">Tees</a>
                         <a className="a4" href="/about">About</a>
                     </Nav>
+                    
                 </Navbar>
             </div>
             
 
             <div className="about-us">
-    <h1 className="about-title">About Starstyle</h1>
+    <h1 className="about-title">About</h1>
     <p className="about-intro">
-        Welcome to Starstyle, your premier destination for customizable clothing! Operated by AVC eVentures, we believe that fashion should be a personal expression of who you are. Our mission is to provide you with high-quality, tailored clothing options that reflect your unique style.
+    At Frenzy Fashion, we prioritize not just the latest trends, but also comfort and quality. Each piece is crafted with care, ensuring that you look good and feel confident. Our team is constantly scouting for new inspirations from global fashion hotspots, delivering fresh and exciting collections that keep you ahead of the style curve.
     </p>
 
     <div className="about-mission">
         <h2>Our Mission</h2>
         <p>
-            At Starstyle, we strive to empower individuals through fashion. We aim to make personalized clothing accessible and affordable, ensuring that everyone can wear what they love. Our commitment to quality and customer satisfaction drives everything we do.
+        Welcome to Frenzy, your go-to boutique for the latest in fashion! Frenzy has been a cornerstone of style and trend-setting for many years. As the new owner, I'm thrilled to continue our legacy of offering unique, great-quality pieces that inspire confidence and individuality
         </p>
     </div>
 
@@ -62,7 +60,7 @@ function about(){
     <div className="about-contact">
         <h2>Contact Us</h2>
         <p>
-            Have questions or feedback? We’d love to hear from you! Reach out to us at <a href="mailto:hello@starstyle.in">hello@starstyle.in</a>.
+            Have questions or feedback? We’d love to hear from you! Reach out to us at <a href="mailto:frency fashion.in">hello@frencyfashion.in</a>.
         </p>
     </div>
 </div>

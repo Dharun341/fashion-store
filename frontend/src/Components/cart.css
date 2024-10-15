@@ -50,7 +50,7 @@
 }
 
 .remove-button {
-    background-color: #ff4d4d;
+    background-color: #090909;
     color: white;
     border: none;
     padding: 10px;
@@ -60,7 +60,7 @@
 }
 
 .remove-button:hover {
-    background-color: #e60000;
+    background-color: #020202;
 }
 
 .cart-summary {
@@ -74,7 +74,7 @@
 }
 
 .checkout-button {
-    background-color: #007bff;
+    background-color: #000000;
     color: white;
     border: none;
     padding: 15px 20px;
@@ -85,11 +85,11 @@
 }
 
 .checkout-button:hover {
-    background-color: #0056b3;
+    background-color: #050505;
 }
 
 .checkout-btn {
-    background-color: #007bff;
+    background-color: #060606;
     color: white;
     border: none;
     padding: 15px 20px;
@@ -100,7 +100,7 @@
 }
 
 .checkout-btn:hover {
-    background-color: #00b318;
+    background-color: #090909;
 }
 
 

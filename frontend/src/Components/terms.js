@@ -8,10 +8,6 @@ function terms(){
 
             <div className='navbar'>
                 <img className='logo' src='./logo3.png' alt="Logo" />
-                <div className='menu'> 
-                            <a className='custom' href='/customizes'>Customize Your products</a>
-                    </div>
-                    
                 <Navbar>
                     <Nav className='nav1'> 
                         <a className="a1" href="/home">Home</a>

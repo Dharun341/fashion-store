@@ -1,6 +1,6 @@
 .footer {
-    background: linear-gradient(135deg, #007bff 0%, #00c6ff 100%); /* Gradient background */
-    color: white; /* Text color */
+    background: linear-gradient(135deg, #000000 0%, #000000 100%); /* Gradient background */
+    color: rgb(1, 1, 1); /* Text color */
     padding: 40px 20px; /* Increased padding */
     transition: background-color 0.3s ease; /* Transition for background color */
 }
@@ -24,7 +24,7 @@
 
 .footer-left p {
     margin-bottom: 10px; /* Space below the paragraph */
-    color: #fff; /* Text color */
+    color: gray; /* Text color */
     font-size: 1.2em; /* Slightly larger font size for readability */
 }
 
@@ -39,14 +39,14 @@
 }
 
 .footer-links li a {
-    color: white; /* Default link color */
+    color: gray; /* Default link color */
     text-decoration: none; /* Remove underline */
     transition: color 0.3s ease; /* Transition for color change */
     font-size: 1em; /* Standard link font size */
 }
 
 .footer-links li a:hover {
-    color: #ffcc00; /* Change color on hover */
+    color: white; /* Change color on hover */
 }
 
 .footer-center {
@@ -65,13 +65,13 @@
 
 .social-media a {
     margin: 0 10px; /* Space between icons */
-    color: white; /* Default icon color */
+    color: gray; /* Default icon color */
     transition: transform 0.3s ease, color 0.3s ease; /* Transition for hover effect */
     font-size: 1.5em; /* Increase icon size */
 }
 
 .social-media a:hover {
-    color: #ffcc00; /* Change icon color on hover */
+    color: white; /* Change icon color on hover */
     transform: scale(1.1); /* Scale up on hover */
 }
 
@@ -85,13 +85,13 @@
 
 .footer-right h4 {
     margin-bottom: 10px; /* Space below the heading */
-    color: #ffcc00; /* Highlight color for headings */
+    color: white; /* Highlight color for headings */
     font-size: 1.5em; /* Larger font size for headings */
 }
 
 .footer-right p {
     margin: 5px 0; /* Space above and below paragraphs */
-    color: #fff; /* White color for text */
+    color: gray; /* White color for text */
 }
 
 .contact-info {
@@ -99,7 +99,7 @@
 }
 
 .morals {
-    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    background-color: rgba(5, 5, 5, 0.1); /* Semi-transparent background */
     border-radius: 10px; /* Rounded corners */
     padding: 10px; /* Padding around the content */
     width: 100%; /* Full width */
@@ -112,18 +112,18 @@
 
 .morals li {
     margin: 5px 0; /* Space between list items */
-    color: #fff; /* White color for list items */
+    color: gray; /* White color for list items */
     transition: color 0.3s ease; /* Smooth color transition */
 }
 
 .morals li:hover {
-    color: #ffcc00; /* Change color on hover */
+    color: white; /* Change color on hover */
 }
 
 .back-to-top {
     margin-top: 20px; /* Space above button */
-    background-color: #ffcc00; /* Background color */
-    color: #007bff; /* Text color */
+    background-color: whitesmoke; /* Background color */
+    color: #060606; /* Text color */
     border: none; /* No border */
     border-radius: 5px; /* Rounded corners */
     padding: 10px 15px; /* Padding for button */
@@ -132,12 +132,12 @@
 }
 
 .back-to-top:hover {
-    background-color: #ffd700; /* Change background on hover */
+    background-color: white; /* Change background on hover */
     transform: translateY(-2px); /* Slight lift effect on hover */
 }
 
 .newsletter {
-    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+    background-color: rgba(9, 9, 9, 0.2); /* Semi-transparent white background */
     border-radius: 10px; /* Rounded corners */
     padding: 20px; /* Spacing around content */
     margin-top: 20px; /* Space above */
@@ -147,12 +147,12 @@
 
 .newsletter:hover {
     transform: scale(1.05); /* Slightly enlarge on hover */
-    background-color: rgba(255, 255, 255, 0.3); /* Change background on hover */
+    background-color: rgba(6, 6, 6, 0.3); /* Change background on hover */
 }
 
 .newsletter h4 {
     margin-bottom: 15px; /* Space below the heading */
-    color: #ffcc00; /* Highlight color for heading */
+    color: white; /* Highlight color for heading */
     font-size: 1.5em; /* Larger font size for heading */
 }
 
@@ -163,22 +163,22 @@
 
 .newsletter input {
     padding: 12px; /* More padding for input */
-    border: 2px solid #ffcc00; /* Solid border */
+    border: 2px solid white; /* Solid border */
     border-radius: 5px; /* Rounded corners */
-    background-color: white; /* White background for input */
+    background-color: rgb(251, 247, 247); /* White background for input */
     margin-right: 10px; /* Space between input and button */
     transition: border-color 0.3s ease; /* Smooth border color change */
 }
 
 .newsletter input:focus {
-    border-color: #ffd700; /* Highlight border color on focus */
+    border-color: white; /* Highlight border color on focus */
     outline: none; /* Remove default outline */
 }
 
 .newsletter button {
     padding: 12px 20px; /* More padding for button */
-    background-color: #ffcc00; /* Background color */
-    color: #007bff; /* Text color */
+    background-color: white; /* Background color */
+    color: #080808; /* Text color */
     border: none; /* No border */
     border-radius: 5px; /* Rounded corners */
     cursor: pointer; /* Pointer on hover */
@@ -186,7 +186,7 @@
 }
 
 .newsletter button:hover {
-    background-color: #ffd700; /* Change background on hover */
+    background-color: white; /* Change background on hover */
     transform: translateY(-2px); /* Slight lift effect on hover */
 }
 
@@ -199,7 +199,7 @@
 }
 
 .contact-info h4:hover, .morals h4:hover {
-    color: #ffcc00; /* Change heading color on hover */
+    color: white; /* Change heading color on hover */
 }
 
 .morals ul {

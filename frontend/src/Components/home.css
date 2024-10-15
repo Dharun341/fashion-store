@@ -1,3 +1,4 @@
+/* Navbar Styles */
 .navbar {
     background: linear-gradient(45deg, #f8f9fa, #e9ecef);
     border-bottom: 1px solid #e7e7e7;
@@ -16,11 +17,13 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
+/* Logo */
 .logo {
     width: 150px;
     margin-right: 20px;
 }
 
+/* Navbar Links */
 .navbar .nav1 {
     display: flex;
     align-items: center;
@@ -55,28 +58,20 @@
 }
 
 .navbar .nav1 a:hover::after {
-    background-color: #007bff;
+    background-color: #030303;
     transform: scaleX(1);
 }
 
-.nav2 {
-    position: relative;
-    margin: 0px 10px;
-}
-
+/* Dropdown Menu */
 .navbar .nav2 {
     display: flex;
     align-items: center;
     position: relative;
 }
 
-.navbar .nav2 .dropdown {
-    position: relative;
-}
-
 .navbar .nav2 .dropdown-toggle {
     text-decoration: none;
-    background-color: #007bff;
+    background-color: #030303;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -87,7 +82,7 @@
 }
 
 .navbar .nav2 .dropdown-toggle:hover {
-    background-color: #0056b3;
+    background-color: #070707;
 }
 
 .navbar .nav2 .dropdown-menu {
@@ -121,36 +116,100 @@
     background-color: #f8f9fa;
 }
 
-.menu {
-    text-align: center;
-    margin: 20px 0;
-}
-
-.menu ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.menu ul li {
-    display: inline;
-}
-
-.menu a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
+/* Updated .signout-btn */
+.signout-btn {
+    color: #0c0c0c;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
     font-size: 16px;
-    transition: color 0.3s;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s ease;
 }
 
-.menu a:hover {
-    color: #007bff;
+.signout-btn:hover {
+    transform: scale(); /* Slight scale effect on hover */
+    
 }
 
+.signout-btn:active {
+    transform: scale(0.95); /* Scale down when clicked */
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+}
+/* Search Bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: auto;
+}
+
+.search-bar input {
+    width: 200px;
+    padding: 8px;
+    font-size: 14px;
+    border: 2px solid #0b0b0b;
+    border-radius: 4px;
+    transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    outline: none;
+}
+
+.search-bar input:focus {
+    border-color: #090909;
+    box-shadow: 0 0 5px rgba(13, 13, 13, 0.5);
+    transform: scale(1.05);
+}
+
+/* Cart Button */
+.cartitem {
+    background-color: #010101;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cartitem:active {
+    transform: scale(0.95);
+    background-color: #070707;
+}
+
+/* Ads Banner */
+.ads {
+    background-color: black;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.2em;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.animate {
+    display: inline-block;
+    animation: moveText 20s linear infinite;
+    font-family: 'Arial', sans-serif;
+    color: #fcf6f6;
+    padding: 0px;
+}
+
+@keyframes moveText {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Product Container */
 .mw {
     display: flex;
     flex-wrap: wrap;
@@ -162,8 +221,8 @@
 
 .img-container {
     display: flex;
-    flex-direction: column; /* Stack children vertically */
-    justify-content: space-between; /* Pushes the button to the bottom */
+    flex-direction: column;
+    justify-content: space-between;
     width: 200px;
     text-align: center;
     border: 1px solid #e7e7e7;
@@ -185,6 +244,7 @@
     border-radius: 5px;
 }
 
+/* Product Title and Button */
 .tit {
     display: block;
     margin-top: 10px;
@@ -195,11 +255,11 @@
 }
 
 .tit:hover {
-    color: #007bff;
+    color: #060606;
 }
 
 .but {
-    background-color: #007bff;
+    background-color: #070707;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -207,107 +267,66 @@
     font-size: 14px;
     cursor: pointer;
     transition: background-color 0.3s;
-    margin-top: 10px; /* Optional for spacing */
+    margin-top: 10px;
 }
 
 .but:hover {
-    background-color: #0056b3;
+    background-color: #090909;
 }
-
-.search-bar {
-    position: relative;
-    margin: 20px auto;
+.home {
+    background-image: url('D:\dharun\mohan\frontend\public\images\custom\bg.jpg'); /* Use relative path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh; /* Ensure it covers the full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+.explore-section {
     text-align: center;
-    background: linear-gradient(135deg, #f0f4f8, #e0e7ef);
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 20px 0;
 }
 
-.search-bar:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+.explore-btn {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 50px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.search-bar input {
-    width: 300px;
-    padding: 12px;
-    font-size: 18px;
-    border: 2px solid #007bff;
-    border-radius: 8px;
-    transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-    outline: none;
-}
-
-.search-bar input:focus {
-    border-color: #0056b3;
-    box-shadow: 0 0 5px rgba(0, 91, 187, 0.5);
+.explore-btn:hover {
+    background-color: #333;
     transform: scale(1.05);
 }
 
-.search-term {
-    margin-top: 10px;
+.explore-btn:active {
+    transform: scale(0.95);
+    background-color: #222;
+}
+.explore-section {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+}
+
+.explore-btn {
+    background-color: #030303;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
     font-size: 16px;
-    color: #333;
-    opacity: 0;
-    transition: opacity 0.4s ease, transform 0.4s ease;
-    animation: fadeIn 0.4s forwards;
-    transform: translateY(-10px);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-.cartitem {
-    background-color: #28a745; /* Initial color */
-    color: white; /* Text color */
-    border: none; /* No border */
-    padding: 10px 20px; /* Padding */
-    font-size: 16px; /* Font size */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Pointer cursor on hover */
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Transition for background and transform */
-    width: 100px;
-    float: right;
-}
-
-.cartitem:hover {
-    background-color: #218838; /* Darker green on hover */
-}
-
-.cartitem:active {
-    transform: scale(0.95); /* Slightly smaller when clicked */
-    background-color: #1e7e34; /* Even darker green when active */
-}
-.ads {
-    overflow: hidden; /* Ensures the text doesn't overflow */
-    white-space: nowrap; /* Prevents the text from wrapping */
-    width: 100%; /* Adjust width as needed */
-    position: relative; /* Allows absolute positioning of the animated text */
-    background-color:  #007bff;
-}
-
-.animate {
-    display: inline-block; /* Makes the element respond to animations */
-    font-size: 1.5em; /* Increase the text size (adjust as needed) */
-    font-family: 'Arial', sans-serif; /* Specify your desired font here */
-    animation: moveText 25s linear infinite; /* Slowed down the animation to 20 seconds */
-    color: white;
-}
-
-@keyframes moveText {
-    0% {
-        transform: translateX(100%); /* Start off the right side */
-    }
-    100% {
-        transform: translateX(-100%); /* Move to the left side */
-    }
+.explore-btn:hover {
+    background-color: #050505;
 }

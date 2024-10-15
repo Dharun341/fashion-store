@@ -1,0 +1,88 @@
+.wheel-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    position: relative; /* To position pointer over the wheel */
+  }
+  
+  .wheel {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 5px solid #333;
+    position: relative;
+    transition: transform 5s ease-out;
+    overflow: hidden;
+  }
+  
+  .wheel-segment {
+    position: absolute;
+    width: 50%; /* Each segment takes half the wheel width */
+    height: 50%; /* Each segment takes half the wheel height */
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%); /* Triangle shape */
+    display: flex; /* Enables flexbox for centering */
+    align-items: center; /* Vertically center text */
+    justify-content: center; /* Horizontally center text */
+    color: white; /* Text color */
+    font-weight: bold; /* Make text bold */
+    transform-origin: 100% 100%; /* Rotate around the center */
+  }
+  
+  /* Adding a gap between triangles */
+  .wheel-segment:nth-child(1) {
+    transform: rotate(0deg) translateY(-5%) rotate(0deg);
+    background-color: #FF6347;
+  }
+  
+  .wheel-segment:nth-child(2) {
+    transform: rotate(60deg) translateY(-5%) rotate(-60deg);
+    background-color: #FFD700;
+  }
+  
+  .wheel-segment:nth-child(3) {
+    transform: rotate(120deg) translateY(-5%) rotate(-120deg);
+    background-color: #ADFF2F;
+  }
+  
+  .wheel-segment:nth-child(4) {
+    transform: rotate(180deg) translateY(-5%) rotate(-180deg);
+    background-color: #1E90FF;
+  }
+  
+  .wheel-segment:nth-child(5) {
+    transform: rotate(240deg) translateY(-5%) rotate(-240deg);
+    background-color: #FF69B4;
+  }
+  
+  .wheel-segment:nth-child(6) {
+    transform: rotate(300deg) translateY(-5%) rotate(-300deg);
+    background-color: #BA55D3;
+  }
+  
+  .spin-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .spin-button:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+  }
+  
+  /* Pointer style - centered in the wheel, pointing upwards */
+  .pointer {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 30px solid red; /* The color of the pointer */
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -100%) rotate(180deg); /* Adjust to perfectly center and point up */
+    z-index: 10;
+  }
+  

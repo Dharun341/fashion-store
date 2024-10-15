@@ -12,10 +12,12 @@
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "bootstrap": "^5.3.3",
     "cors": "^2.8.5",
     "express": "^4.21.0",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.6.2",
+    "react-bootstrap": "^2.10.5",
     "react-draggable": "^4.4.6"
   }
 }

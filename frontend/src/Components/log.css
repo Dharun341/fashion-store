@@ -42,12 +42,12 @@
   }
   
   .login-input:focus {
-    border-color: #007bff;
+    border-color: #0c0c0c;
     outline: none;
   }
   
   .error-message {
-    color: red;
+    color: rgb(6, 6, 6);
     margin-bottom: 15px;
   }
   
@@ -71,12 +71,12 @@
   }
   
   .login-button {
-    background-color: #007bff;
+    background-color: #090909;
     color: #fff;
   }
   
   .login-button:hover {
-    background-color: #0056b3;
+    background-color: #0d0d0e;
   }
   
   .signup-link {

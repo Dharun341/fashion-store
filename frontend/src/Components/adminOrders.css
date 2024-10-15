@@ -1,0 +1,293 @@
+/* General container styling */
+.admin-orders-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Title styling */
+.admin-orders-container h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    position: relative;
+    animation: slideDown 0.8s ease-in-out;
+}
+
+/* Error message styling */
+.error-message {
+    color: red;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Table styling */
+.orders-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.orders-table th,
+.orders-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+.orders-table th {
+    background-color: #060606;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Table row styling */
+.orders-table tr {
+    transition: background-color 0.3s ease;
+}
+/* Table cell styling */
+.orders-table td {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* View button cell styling */
+.orders-table td .view-item-button {
+    text-align: center;
+}
+
+/* Ensure the View button stays in the same column */
+.orders-table td {
+    vertical-align: middle;
+}
+
+/* View Button styling */
+.view-item-button {
+    display: inline-flex; /* Use flex to center the content inside the button */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    padding: 10px 20px; /* Sufficient padding for a comfortable button size */
+    background-color: #050505;
+    color: white;
+    border: 2px solid #0f0f0f;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    width: 100px; /* Fixed width for all buttons to be consistent */
+    height: 40px; /* Fixed height for all buttons */
+    font-size: 1rem; /* Consistent font size */
+    font-weight: bold; /* Bold text for better readability */
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+    outline: none; /* Remove default button outline */
+    white-space: nowrap; /* Ensure text doesn't wrap inside button */
+    overflow: hidden; /* Prevent overflow of content */
+}
+
+/* Hover effect */
+.view-item-button:hover {
+    background-color: #000000;
+    transform: scale(1.05); /* Slight enlargement on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Add shadow for hover effect */
+}
+
+/* Active/Clicked state */
+.view-item-button:active {
+    transform: scale(0.98); /* Shrink effect when button is pressed */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Reduce shadow on click */
+}
+
+/* Focus state for accessibility */
+.view-item-button:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 0 3px rgba(6, 6, 6, 0.5); /* Add blue glow effect on focus */
+}
+
+/* Animation for when button is loaded */
+@keyframes fadeInButton {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.view-item-button {
+    animation: fadeInButton 0.6s ease-out; /* Button fade-in animation */
+}
+
+/* Table cell styling for button alignment */
+.orders-table td .view-item-button {
+    text-align: center; /* Ensure buttons are centered within the table cells */
+    vertical-align: middle; /* Align vertically in the center */
+}
+
+/* Modal styling with fixed size */
+.item-details-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px; /* Fixed width for uniform modal size */
+    height: 400px; /* Fixed height for uniform modal size */
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow-y: auto; /* To handle scrolling if content exceeds height */
+    z-index: 1000; /* To ensure modal appears on top */
+}
+
+.item-image {
+    max-width: 100%;
+    margin: 10px 0;
+    object-fit: contain;
+    height: 200px; /* Fixed height for consistent image display */
+}
+
+/* Close button for modal */
+/* Close button styling */
+.close-button {
+    padding: 8px 16px; /* Slightly bigger padding for better click area */
+    background-color: #dc3545;
+    color: white;
+    border: 2px solid #dc3545;
+    border-radius: 6px; /* Rounded corners for a softer look */
+    cursor: pointer;
+    float: right;
+    font-size: 0.9rem; /* Slightly larger font for better readability */
+    font-weight: bold; /* Make the button text bold */
+    text-align: center; /* Ensure text is centered */
+    text-decoration: none; /* Remove any text decoration */
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+}
+
+.close-button:hover {
+    background-color: #c82333; /* Darker red on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Increase shadow for a hover effect */
+}
+
+.close-button:focus {
+    outline: none; /* Remove the default focus outline */
+    box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.5); /* Add a glow effect when focused */
+}
+
+/* Accessibility focus state */
+.close-button:active {
+    transform: scale(1); /* Slightly shrink when clicked to give a pressed effect */
+}
+
+/* Modal content styling */
+.modal-content {
+    text-align: left;
+}
+
+/* Animation keyframes */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes rowFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive styling */
+@media screen and (max-width: 768px) {
+    .admin-orders-container {
+        padding: 15px;
+    }
+
+    .orders-table th,
+    .orders-table td {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .admin-orders-container h2 {
+        font-size: 1.5rem;
+    }
+
+    .item-details-modal {
+        width: 90%;
+        height: 80%;
+    }
+}
+
+/* Styles for the logout button */
+.logout-button {
+    background-color: #050505; /* Red color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 20px; /* Adds space below the button */
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect */
+  .logout-button:hover {
+    background-color: #080808; /* Darker red on hover */
+  }
+  
+  /* Optional: Focus state */
+  .logout-button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow when focused */
+  }
+  
+  /* Optional: Add some margin to the right if you have other buttons */
+  .logout-button + .some-other-button {
+    margin-left: 10px;
+  }
+  .remove-icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  
+  .remove-item-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+  
